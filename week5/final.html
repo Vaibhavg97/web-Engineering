@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>News Website Layout</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+<div id="container">
+
+	<div id="top_panel">
+        <div id="sitetitle">
+            NEWS Website
+        </div>
+        <div id="searchbox">
+            <form action="#" method="get">
+                <input name="search" type="radio" value="thissite" checked="checked" />
+              this site <input type="radio" name="search" value="theweb" />
+            the web <br />
+                <input type="text" name="q" size="10" id="searchfield" title="searchfield" />
+                <input type="submit" name="Search" value="Search" alt="Search" id="searchbutton" title="Search" />
+            </form>
+        </div>
+         <div id="currentdate">
+			<script type="text/javascript">
+				
+				var m_names = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+				var d_names = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+				
+				var currentTime = new Date()
+				var day = currentTime.getDay()
+				var month = currentTime.getMonth()
+				var date = currentTime.getDate()
+				var year = currentTime.getFullYear()
+				document.write( d_names[day] + ", " + date + " " + m_names[month] + " " + year + ", ")
+				var currentTime = new Date()
+				var hours = currentTime.getHours()
+				var minutes = currentTime.getMinutes()
+				if (minutes < 10){
+				minutes = "0" + minutes
+				}
+				document.write(hours + ":" + minutes + " ")
+				if(hours > 11){
+				document.write("PM")
+				} else {
+				document.write("AM")
+				}
+				
+			</script>
+        </div>
+</div>
+
+<div id="menu">
+        <ul>
+            <li><a href="final.html"  class="current">Home</a></li>
+            <li><a href="#">Daily News</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Business</a></li>  
+            <li><a href="#">Politics</a></li> 
+            <li><a href="#">Entertainment</a></li>                     
+            <li><a href="#">Technology &amp; Science</a></li>            
+        </ul> 
+	</div>
+    
+	<div id="content">
+
+    	<div id="main_leftcol">
+        	<div class="leftcol_subcol">
+            
+            	<div id="topnews">
+                    <img src="images/image_01.jpg" alt="image" />
+                    <h1>News</h1>
+                    <p align="justify" style="color:red;">
+
+                     It seems like Uttar Pradesh chief minister Yogi Adityanath has taken the setback to the BJP in the recently-concluded Uttar Pradesh bypolls in his stride. 
+
+<p> Maintaining that the results were a lesson to be learnt by the ruling party, the firebrand leader forecast a brilliant showing for the saffron outfit in next year's Lok Sabha elections.</p>
+                  <span class="updatedtime">updated 12 minutes ago</span>
+				</div> 
+                
+                <div id="gallery_section">
+                	<h2>Today's Images</h2>
+              <div id="image_section">
+                        <a href="#"><img src="images/image_02.jpg" alt="image" /></a>
+                        <a href="#"><img src="images/image_03.jpg" alt="image" /></a>
+                        <a href="#"><img src="images/image_04.jpg" alt="image" /></a>
+                        <a href="#"><img src="images/image_05.jpg" alt="image" /></a>
+                        <a href="#"><img src="images/image_06.jpg" alt="image" /></a>
+                        		</div>
+                    
+                
+            </div> 
+
+
+<div class="leftcol_subcol">
+				<div class="regular_section">
+                    <h2>General News</h2>
+					<div class="newsbox"><img src="images/image_08.jpg" alt="image" /><span class="newstitle">News Title 01</span><br />
+                        <p>
+                        Ever since Bitcoin surged near the-$20,000 mark towards the end of the year 2017, cybercriminals have been looking for ways to trap Android smartphone users
+                        to mine Bitcoins and other cyrptocurrencies using their device's computing power.<a href="#">full story</a>                        
+
+				  </div>
+                        
+                    <ul>
+                        <li><a href="#">BJP Elections</a></li>
+                        <li><a href="#">Vasant Kunj</a></li>
+                        <li><a href="#">Air India Twitter accocunt hacked</a></li>
+                        
+                    </ul>
+                    
+                </div>
+                
+                <div class="regular_section">
+                    <h2>Sports</h2>
+					<div class="newsbox"><img src="images/image_12.jpg" alt="image" /><span class="newstitle">News Title 02</span><br />
+                        <p>
+                        All England Open: PV Sindhu beats Nitchaon Jindapol to enter quarter-finals <a href="#">full story</a>                        </p>
+					</div>
+                        
+                    <ul>
+                    	<li><a href="#">Badminton</a></li>
+                        <li><a href="#">Cricket</a></li>
+                        
+                    </ul>
+                    
+                </div>
+ <div id="main_rightcol">
+        	<div class="rcol_sectionwithborder">
+
+            <div class="rcol_sectionwithborder">
+            	<div id="newsletter_section">
+                    <h2>Subscribe Newsletter</h2>
+                    <form method="get" action="#">
+                        <div class="form_row">	
+                        <label>Choose Newsletter</label>
+                        <select>
+                            <option>Daily News</option>
+                            <option>Breaking News</option>
+                            <option>Sport News</option>                        
+                            <option>Entertainment News</option>                        
+                        </select>
+                        </div>
+                        <div class="form_row"><label>Email address</label><input class="inputfield" name="email_address" type="email" id="email_address"/></div>
+                       <input class="button" type="submit" name="Submit" value="Subscribe" />
+                    </form>
+				</div>
+            </div> 
+</div>
+</div>
+    <div id="footer">
+    	<div class="footer_leftcol">
+	        Copyright © 2018 <a href="#"><strong>Vaibhav Gupta</strong></a><br />
+			   </div>
+        <div class="footer_rightcol">
+        	<div class="footer_subcol">
+				<a href="#">Mainpage</a><br />
+              	<a href="#">Company</a><br />
+                <a href="#">Advertise</a><br />
+                <a href="#">Feedback</a><br />
+			</div>
+            <div class="footer_subcol">
+				<a href="#">English</a><br />
+				<a href="#">Japanese</a><br />
+				<a href="#">Chinese</a><br />
+				<a href="#">German</a><br />
+                <a href="#">French</a>
+                </div>
+            <div class="footer_subcol">
+				<a href="#">Terms</a><br />
+                <a href="#">Privacy</a><br />
+                <a href="#">Sitemap</a><br />
+                <a href="#">Contact</a><br />
+                <a href="#">Help</a>
+			</div>
+        </div>
+        
+    </div>
+
+</div>
+</body>
+</html>
