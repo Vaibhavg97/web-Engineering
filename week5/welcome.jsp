@@ -12,7 +12,7 @@
   <h1>Welcome </h1>
 			<h2><%out.print(request.getParameter("name"));%></h2>
 	<div> You are now a successfully registered member of File Share</div>
-<div class="share"> To share files. Click <a href="single.html">here</a> 
+<div class="share"> To share files. Click <a href="final.html">here</a> 
 </form>
 </body>
 </html>
